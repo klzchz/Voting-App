@@ -53,7 +53,30 @@
 
         <main class="container mx-auto max-w-custom flex" >
             <div class="w-70 mr-5" >
-               Add idea form goes here . Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nesciunt, commodi quisquam qui ullam reiciendis tempora exercitationem similique odio corrupti. Non, voluptatibus aut quidem molestiae sapiente eos quia amet doloremque, nisi vitae quasi quisquam itaque corrupti autem. Ipsa, enim doloribus!
+               <div class="bg-white border-2 border-blue rounded-xl mt-16">
+                   <div class="text-center px-6 py-2  pt-6">
+                        <h3 class="font-semibold text-base">Add an Idea </h3> 
+                        <p class="text-xs mt-4">Let us know what you would like and we'll take a look over !</p>
+                   </div>
+
+                   <form action="#" method="POST" class="space-y-4 px-4 py-6">
+                        <div>
+                            <input type="text" class="w-full text-sm bg-gray-100 rounded-xl border-none placeholder-gray-900 px-4 py-2" placeholder="Your Idea ">
+                        </div>
+
+                        <div>
+                            <select name="category_add" id="category_add" class="w-full rounded-xl bg-gray-100 mt-2 text-gray-900 border-none px-4 py-2">
+                                <option value="Category One">Category One</option>
+                                <option value="Category Two">Category Two</option>
+                                <option value="Category Three">Category Three</option>
+                                <option value="Category Four">Category Four</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                   </form>
+               </div>
             </div>
             <div class="w-175">
                 <nav class="flex items-center  justify-between text-xs">
@@ -73,6 +96,5 @@
                 </div>
             </div>
         </main>
-        
     </body>
 </html>
