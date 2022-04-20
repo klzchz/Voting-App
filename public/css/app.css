@@ -748,6 +748,12 @@ select {
 .h-20 {
   height: 5rem;
 }
+.h-11 {
+  height: 2.75rem;
+}
+.h-4 {
+  height: 1rem;
+}
 .h-full {
   height: 100%;
 }
@@ -762,9 +768,6 @@ select {
 }
 .h-10 {
   height: 2.5rem;
-}
-.h-4 {
-  height: 1rem;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -787,6 +790,12 @@ select {
 .w-70 {
   width: 17.5rem;
 }
+.w-1\/2 {
+  width: 50%;
+}
+.w-4 {
+  width: 1rem;
+}
 .w-175 {
   width: 43.75rem;
 }
@@ -795,9 +804,6 @@ select {
 }
 .w-2\/3 {
   width: 66.666667%;
-}
-.w-4 {
-  width: 1rem;
 }
 .w-14 {
   width: 3.5rem;
@@ -821,7 +827,7 @@ select {
   max-width: 72rem;
 }
 .max-w-custom {
-  max-width: 62.5rem;
+  max-width: 68.5rem;
 }
 .max-w-7xl {
   max-width: 80rem;
@@ -843,6 +849,10 @@ select {
 }
 .origin-top-right {
   transform-origin: top right;
+}
+.-rotate-45 {
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .scale-95 {
   --tw-scale-x: .95;
@@ -891,6 +901,11 @@ select {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1080,6 +1095,10 @@ select {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1087,10 +1106,6 @@ select {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 .py-12 {
   padding-top: 3rem;
@@ -1337,13 +1352,13 @@ select {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
-.hover\:border-blue:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(50 138 241 / var(--tw-border-opacity));
-}
 .hover\:border-gray-400:hover {
   --tw-border-opacity: 1;
   border-color: rgb(163 163 163 / var(--tw-border-opacity));
+}
+.hover\:border-blue:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(50 138 241 / var(--tw-border-opacity));
 }
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
@@ -1356,6 +1371,10 @@ select {
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+.hover\:bg-blue-hover:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 121 191 / var(--tw-bg-opacity));
 }
 .hover\:bg-gray-200:hover {
   --tw-bg-opacity: 1;
