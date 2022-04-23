@@ -40,16 +40,18 @@
                     <button class="w-20 bg-gray-200 border border-gray-200 hover:border-gray-400 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in px-4 py-3">Vote</button>
                 </div>
             </div>
-            <div class="flex px-2 py-6">
-                <a href="" class="flex-none">
-                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=22" alt="avatar" class="w-14 h-14 rounded-xl">
-                </a>
-                <div class="mx-4">
+            <div class="flex flex-1 px-2 py-6">
+                <div class="flex-none">
+                    <a href="#" >
+                        <img src="https://source.unsplash.com/200x200/?face&crop=face&v=22" alt="avatar" class="w-14 h-14 rounded-xl">
+                    </a>
+                </div>
+                <div class="w-full mx-4">
                     <h4 class="text-xl font-semibold">
                         <a href="#" class="hover:underline">A random title can go here</a>
                     </h4>
                     <div class="text-gray-600 line-clamp-3">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad et harum commodi, velit ex minima fuga ullam corporis. Dolore laborum, numquam necessitatibus iure fuga adipisci modi libero voluptates unde totam quo aut qui quis eveniet sapiente. Blanditiis quod consequuntur minus aliquid eveniet quae soluta deleniti quibusdam minima impedit provident ad optio ipsum magni qui maiores odio iusto ipsam perspiciatis veniam architecto obcaecati, ducimus necessitatibus! Tempora maxime ipsum odit blanditiis dolor harum quisquam minus nam, ipsam veniam ipsa illo dolore nulla modi odio ab non laborum iure sed quasi rerum eaque dolorum. Ipsa sapiente cum dolorem culpa similique numquam reprehenderit eligendi!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     </div>
                     <div class="flex items-center justify-between mt-6">
                         <div class="flex items-center text-xs text-gray-400 font-semibold space-x-2">
@@ -62,7 +64,7 @@
                         </div>
                         <div class="flex items-center space-x-2">
                             <div class="bg-gray-200 text-xxs font-bold uppercase  leading-none rounded-full  text-center w-28  h-7 py-2 px-4">Open</div>
-                            <button class="relative bg-gray-200 hover:bg-gray-200 rounded-full h-7 transition duration-150 ease-in px-2"> 
+                            <button class="relative bg-gray-200 hover:bg-gray-200 border rounded-full h-7 transition duration-150 ease-in px-2"> 
                                 <svg  class="h-6 w-7" style="color: rgba(163, 163, 163, .5)" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                                 </svg>
@@ -89,16 +91,18 @@
                     <button class="w-20 bg-blue text-white border border-white hover:border-blue font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in px-4 py-3">Vote</button>
                 </div>
             </div>
-            <div class="flex px-2 py-6">
-                <a href="" class="flex-none">
-                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
-                </a>
-                <div class="mx-4">
+            <div class="flex flex-1 px-2 py-6">
+                <div class="flex-none">
+                    <a href="" class="flex-none">
+                        <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
+                    </a>
+                </div>
+                <div class="w-full mx-4">
                     <h4 class="text-xl font-semibold">
                         <a href="#" class="hover:underline">A random title can go here</a>
                     </h4>
                     <div class="text-gray-600 line-clamp-3">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad et harum commodi, velit ex minima fuga ullam corporis. Dolore laborum, numquam necessitatibus iure fuga adipisci modi libero voluptates unde totam quo aut qui quis eveniet sapiente. Blanditiis quod consequuntur minus aliquid eveniet quae soluta deleniti quibusdam minima impedit provident ad optio ipsum magni qui maiores odio iusto ipsam perspiciatis veniam architecto obcaecati, ducimus necessitatibus! Tempora maxime ipsum odit blanditiis dolor harum quisquam minus nam, ipsam veniam ipsa illo dolore nulla modi odio ab non laborum iure sed quasi rerum eaque dolorum. Ipsa sapiente cum dolorem culpa similique numquam reprehenderit eligendi!
+                        Lorem, ipsum dolor sit amet consectetur .
                     </div>
                     <div class="flex items-center justify-between mt-6">
                         <div class="flex items-center text-xs text-gray-400 font-semibold space-x-2">
@@ -111,7 +115,7 @@
                         </div>
                         <div class="flex items-center space-x-2">
                             <div class="bg-yellow text-white text-xxs font-bold uppercase  leading-none rounded-full  text-center w-28  h-7 py-2 px-4">In Progress</div>
-                            <button class="relative bg-gray-200 hover:bg-gray-200 rounded-full h-7 transition duration-150 ease-in px-2"> 
+                            <button class="relative bg-gray-200 hover:bg-gray-200 border  rounded-full h-7 transition duration-150 ease-in px-2"> 
                                 <svg  class="h-6 w-7" style="color: rgba(163, 163, 163, .5)" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                                 </svg>
