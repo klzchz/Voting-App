@@ -1,3 +1,54 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+/*vertical line to the left of the comments*/
+
+.comments-contianer::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -40px;
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #78909c;
+    opacity: .07;
+}
+
+.comment-container::before {
+    /*horizontAL line to the left of the comments*/
+    position: absolute;
+    display: block;
+    top: 57px;
+    left: -40px;
+    content: "";
+    width: 23px;
+    height: 3px;
+    background: #78909c;
+    opacity: .07;
+}
+
+.comment-container:last-child::after {
+    position: absolute;
+    display: block;
+    top: 57px;
+    left: -40px;
+    content: "";
+    width: 3px;
+    height: calc(100% - 60px);
+    background: #f7f8fc;
+    background: theme('colors.gray-background');
+}
+
+.is-admin::before {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 38px;
+    border: 7px solid white;
+    box-shadow: 4px 4px 15px 0 rgba(36, 37, 38, 0.08);
+    left: -58px;
+    background-color: theme('colors.purple');
+    opacity: 1;
+}
