@@ -649,6 +649,9 @@ select {
 .z-0 {
   z-index: 0;
 }
+.z-10 {
+  z-index: 10;
+}
 .z-50 {
   z-index: 50;
 }
@@ -832,6 +835,9 @@ select {
 }
 .w-2\/3 {
   width: 66.666667%;
+}
+.w-104 {
+  width: 26rem;
 }
 .w-48 {
   width: 12rem;
@@ -1181,6 +1187,9 @@ select {
 .pb-1 {
   padding-bottom: 0.25rem;
 }
+.text-left {
+  text-align: left;
+}
 .text-center {
   text-align: center;
 }
@@ -1438,6 +1447,14 @@ select {
     left: -58px;
     background-color: #8b60ed;
     opacity: 1;
+}
+.is-admin {
+    border-width: 1px;
+    border-image-source: linear-gradient(266deg, #21c8f6 98%, #637bff -52%);
+    border-image-slice: 1;
+    background-image: linear-gradient(to bottom, #fff, #fff), linear-gradient(266deg, #21c8f6 98%, #637bff -52%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 .hover\:border-gray-400:hover {
   --tw-border-opacity: 1;
