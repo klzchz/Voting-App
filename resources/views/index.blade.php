@@ -53,7 +53,7 @@
                     <div class="text-gray-600 line-clamp-3">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     </div>
-                    <div class="flex items-center justify-between mt-6">
+                    <div class="flex items-center justify-between mt-6" x-data="{isOpen:false}">
                         <div class="flex items-center text-xs text-gray-400 font-semibold space-x-2">
                             <div>10 hours ago</div>
                             <div>&bull;</div>
@@ -64,11 +64,17 @@
                         </div>
                         <div class="flex items-center space-x-2">
                             <div class="bg-gray-200 text-xxs font-bold uppercase  leading-none rounded-full  text-center w-28  h-7 py-2 px-4">Open</div>
-                            <button class="relative bg-gray-200 hover:bg-gray-200 border rounded-full h-7 transition duration-150 ease-in px-2"> 
+                            <button @click="isOpen = !isOpen" class="relative bg-gray-200 hover:bg-gray-200 border rounded-full h-7 transition duration-150 ease-in px-2"> 
                                 <svg  class="h-6 w-7" style="color: rgba(163, 163, 163, .5)" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                                 </svg>
-                                <ul class="absolute w-44 font-semibold bg-white shadow-dialog rounded-xl py-3 ml-8">
+                                <ul 
+                                    x-cloak
+                                    x-show="isOpen"
+                                    x-transition:enter.duration.500ms
+                                    @click.away="isOpen = false"
+                                    @keydown.scape.window="isOpen = false"
+                                    class="absolute w-44 font-semibold bg-white shadow-dialog rounded-xl py-3 ml-8">
                                     <li><a href="#" class="hover:bg-gray-100 block transition  duration-150 ease-in px-5 py-3">Mark as Spam</a></li>
                                     <li><a href="#" class="hover:bg-gray-100 block transition  duration-150 ease-in px-5 py-3">Delete a Post</a></li>
                                 </ul>       

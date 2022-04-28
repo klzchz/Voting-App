@@ -57,14 +57,20 @@
 
     <div class="buttons-container flex items-center justify-between mt-6">
         
-    <div class="flex items-center space-x-4 ml-6">
+    <div class="flex items-center space-x-4 ml-6" x-data="{isOpen:false }">
         <div class="relative">
-            <button type="button" class="flex items-center justify-center h-11 w-32 text-sm bg-blue
+            <button  @click="isOpen = !isOpen"  type="button" class="flex items-center justify-center h-11 w-32 text-sm bg-blue
             font-semibold rounded-xl border border-blue hover:bg-blue-hover
             transition duration-150 ease-in px-6 py-3 text-white">
             <span class="ml-1">Reply</span>
             </button>
-            <div class="hidden absolute z-10 w-104 text-left font-semibold text-sm bg-white shadow-dialog rounded-xl mt-2">
+            <div class="absolute z-10 w-104 text-left font-semibold text-sm bg-white shadow-dialog rounded-xl mt-2"
+                x-cloak
+                x-show="isOpen"
+                x-transition:enter.duration.500ms
+                @click.away="isOpen = false"
+                @keydown.scape.window="isOpen = false"
+            >
                 <form action="#" class="space-y-4 px-4 py-6">
                     <div >
                         <textarea name="post_comment" id="post_comment" cols="30" rows="4"
@@ -92,8 +98,8 @@
             </div>
         </div>
        
-        <div class="relative">
-            <button type="button" class="flex items-center justify-center h-11 w-36 text-sm bg-gray-200
+        <div class="relative" x-data="{isOpen:false}">
+            <button @click="isOpen = !isOpen"  type="button" class="flex items-center justify-center h-11 w-36 text-sm bg-gray-200
             font-semibold rounded-xl border border-gray-200 hover:border-gray-400
             transition duration-150 ease-in px-6 py-3">
                 <span>Set Status</span>
@@ -102,7 +108,13 @@
                 </svg>
             </button>
 
-            <div class="absolute z-20 w-76 text-left font-semibold text-sm bg-white shadow-dialog rounded-xl mt-2">
+            <div class="absolute z-20 w-76 text-left font-semibold text-sm bg-white shadow-dialog rounded-xl mt-2"
+                x-cloak
+                x-show="isOpen"
+                x-transition:enter.duration.500ms
+                @click.away="isOpen = false"
+                @keydown.scape.window="isOpen = false"
+             >
                 <form action="#" class="space-y-4 px-4 py-6">
                     <div class="space-y-2">
                         <div>

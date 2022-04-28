@@ -20,7 +20,7 @@
 
 <body class="font-sans bg-gray-background text-gray-900 text-sm">
     <header class="flex items-center justify-between px-8 py-4">
-        <a class="ml-4" href="#">
+        <a class="ml-4" href="/">
             <img src="{{ asset('img/logo.svg') }}" alt="logo">
         </a>
         <div class="flex items-center">
