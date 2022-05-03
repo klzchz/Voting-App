@@ -46,7 +46,7 @@
                         <img src="https://source.unsplash.com/200x200/?face&crop=face&v=22" alt="avatar" class="w-14 h-14 rounded-xl">
                     </a>
                 </div>
-                <div class="w-full mx-4">
+                <div class="w-full flex flex-col justify-between mx-4">
                     <h4 class="text-xl font-semibold">
                         <a href="#" class="hover:underline">A random title can go here</a>
                     </h4>

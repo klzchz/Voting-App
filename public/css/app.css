@@ -1746,8 +1746,30 @@ select {
 }
 @media (min-width: 768px) {
 
+  .md\:sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+  .md\:top-8 {
+    top: 2rem;
+  }
+
+  .md\:mx-1 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:border-t-0 {
@@ -1759,6 +1781,10 @@ select {
   }
 }
 @media (min-width: 1024px) {
+
+  .lg\:flex {
+    display: flex;
+  }
 
   .lg\:px-8 {
     padding-left: 2rem;
