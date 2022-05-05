@@ -54,7 +54,7 @@
     </header>
 
     <main class="container mx-auto max-w-custom flex flex-col md:flex-row">
-        <div class="w-70 mx-auto md:mx-1 mr-5">
+        <div class="w-70 mx-auto md:mx-0 md:mr-5">
             <div 
                 class="bg-white md:sticky md:top-8 border-2 border-blue rounded-xl mt-16"
                 style="border-image-source:linear-gradient(to bottom,rgba(50,138,241,0.22),rgba(99,123,255,0));
@@ -112,8 +112,8 @@
                 </form>
             </div>
         </div>
-        <div class="w-175">
-            <nav class="hidden md:flex lg:flex  items-center  justify-between text-xs">
+        <div class="w-full px-2 md:px-0 md:w-175">
+            <nav class="hidden md:flex lg:flex items-center  justify-between text-xs">
                 <ul class="flex  uppercase  font-semibold border-b-4 pb-3  space-x-10">
                     <li><a href="#" class="border-b-4 pb-3 border-blue">All ideas (87)</a></li>
                     <li><a href="#"
